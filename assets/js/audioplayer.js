@@ -1,7 +1,4 @@
 function audioPlayer() {
-    var currentSong = 0;
-    $("#playlist li audio")[currentSong].play();
-
     $("#playlist li a").click(function (e) {
         currentSong = $(this).parent().index();
         var items = $("#playlist li");
