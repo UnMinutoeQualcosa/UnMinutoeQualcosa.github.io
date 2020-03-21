@@ -306,7 +306,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color: #ffffff;
 	}
 
 	blockquote {
@@ -4692,8 +4692,10 @@ input, select, textarea {
 	list-style: none;
 }
 #playlist li a {
-	color:black;
+	color:white;
 	text-decoration: none;
+	font-size: 40px;
+	padding-right: 100%;
 }
 #playlist .current-song a{
 	color: rgb(130, 100, 100);
@@ -4703,6 +4705,15 @@ input, select, textarea {
 	color: rgb(130, 100, 100);
 }
 
+.buttonColor {
+	color: white;
+}
+
 
 .link { color: #FF0000; } /* CSS link color (red) */
 .link:hover { color: #00FF00; } /* CSS link hover (green) */
+
+
+#idea p {
+	color: white;
+}
