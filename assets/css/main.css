@@ -3412,15 +3412,6 @@ body.is-preload #wrapper.fade-in:before {
     visibility: hidden;
 }
 
-#intro + #header .logoUmeq {
-    -moz-transform: translateY(2rem);
-    -webkit-transform: translateY(2rem);
-    -ms-transform: translateY(2rem);
-    transform: translateY(2rem);
-    opacity: 0;
-    visibility: hidden;
-}
-
 #intro.hidden {
     pointer-events: none;
     -moz-transform: translateY(2rem);
@@ -3436,15 +3427,6 @@ body.is-preload #wrapper.fade-in:before {
 }
 
 #intro.hidden + #header .logo {
-    -moz-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-}
-
-#intro.hidden + #header .logoUmeq {
     -moz-transform: translateY(0);
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -3591,19 +3573,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     font-weight: 900;
     letter-spacing: 0.075em;
     line-height: 1;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 2.25rem;
     text-transform: uppercase;
-    visibility: visible;
-}
-
-#header .logoUmeq {
-    -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
-    -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
-    -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
-    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-    pointer-events: auto;
-    padding: 1rem 1.75rem;
-    width: 20%;
     visibility: visible;
 }
 
@@ -4786,16 +4757,22 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 .imgLi {
     border: 0;
     float: left;
-    width: 8%
+    width: 8%;
 }
 
 .imgLogo {
     border: 0;
-    width: 15%
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
 }
 
 .imgLogoScrolled {
     border: 0;
-    width: 15%
+    display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
 }
-
