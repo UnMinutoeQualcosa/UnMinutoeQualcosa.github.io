@@ -4764,6 +4764,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     border: 0;
     float: left;
     width: 8%;
+    cursor: pointer;
 }
 
 .imgLogo {
