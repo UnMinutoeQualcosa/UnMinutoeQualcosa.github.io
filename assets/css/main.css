@@ -3603,6 +3603,11 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
         border-width: 3px !important;
     }
 
+    #header .logo {
+        font-size: 1rem;
+        border-width: 3px !important;
+    }
+
     #header .logoUmeq {
         font-size: 1.75rem;
         width: 25%;

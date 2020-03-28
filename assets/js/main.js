@@ -133,7 +133,7 @@
 
 			// Change toggle styling once we've scrolled past the header.
 				$header.scrollex({
-					bottom: '5vh',
+					bottom: '10vh',
 					enter: function() {
 						$navPanelToggle.removeClass('alt');
 					},
