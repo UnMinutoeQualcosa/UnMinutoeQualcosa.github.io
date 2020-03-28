@@ -2922,7 +2922,6 @@ header > .date {
 }
 
 header > p {
-    font-style: italic;
 }
 
 header > h1 + p {
@@ -3977,11 +3976,11 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #footer input, #footer select, #footer textarea {
-    color: #717981;
+    color: #ffffff;
 }
 
 #footer a {
-    color: #717981;
+    color: #ffffff;
     border-bottom-color: rgba(113, 121, 129, 0.5);
 }
 
@@ -3995,7 +3994,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-    color: #717981;
+    color: #fffff;
 }
 
 #footer blockquote {
