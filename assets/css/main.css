@@ -3410,6 +3410,7 @@ body.is-preload #wrapper.fade-in:before {
     transform: translateY(2rem);
     opacity: 0;
     visibility: hidden;
+    display: none;
 }
 
 #intro.hidden {
@@ -3433,6 +3434,7 @@ body.is-preload #wrapper.fade-in:before {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+    display: block;
 }
 
 body.is-preload #intro {
@@ -3575,7 +3577,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     line-height: 1;
     padding: 0.5rem 2.25rem;
     text-transform: uppercase;
-    visibility: visible;
+    visibility: hidden;
+    display: none;
 }
 
 #header .logo:hover {
@@ -3603,14 +3606,12 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
         border-width: 3px !important;
     }
 
-    #header .logo {
-        font-size: 1rem;
-        border-width: 3px !important;
-    }
-
-    #header .logoUmeq {
-        font-size: 1.75rem;
-        width: 25%;
+    #header .logoScrolled {
+        border-style: hidden !important;
+        width: auto;
+        height: auto;
+        max-width: 50%;
+        max-height: 70%;
     }
 
 }
@@ -4752,6 +4753,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 .custom_li {
     display: inline-block;
+    line-height: 20%;
 }
 
 #playlist li {
@@ -4767,17 +4769,18 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 .imgLogo {
     border: 0;
-    max-width:230px;
-    max-height:95px;
-    width: auto;
-    height: auto;
+    max-width: 25%!important;
+    max-height: 25%!important;
+    width: auto !important;;
+    height: auto !important;;
 }
 
-.imgLogoScrolled {
+
+.logoScrolled {
+    border-style: hidden !important;
     border: 0;
-    display: block;
-  max-width:230px;
-  max-height:95px;
-  width: auto;
-  height: auto;
+    height: auto !important;
+    width: auto !important;
+    max-width: 50% !important;
+    max-height: 70% !important;
 }
