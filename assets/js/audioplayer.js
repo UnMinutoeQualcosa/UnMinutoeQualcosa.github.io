@@ -1,15 +1,16 @@
 function audioPlayer() {
 
-    $("#playlist li a").dblclick(function (e) {
-        var currentSong = $(this).parent().index();
+    $('#playlist li a span img').dblclick(function (e) {
+
+        var currentSong = $(this).parent().parent().parent().index();
         $("#playlist li audio")[currentSong].currentTime = 0;
         $("#playlist li audio")[currentSong].play();
         $("#playlist li").removeClass("current-song");
 
 
-        $(this).parent().addClass("current-song");
+        $(this).parent().parent().parent().addClass("current-song");
         $("#playlist li a span img")[currentSong].setAttribute('src', 'assets/img/UMEQ-01.png');
-        $(this).parent().removeClass("paused");
+        $(this).parent().parent().parent().removeClass("paused");
         $("#playlist li audio")[currentSong].addEventListener("ended", function () {
             currentSong++;
             if (currentSong === $("#playlist li a").length)
@@ -22,8 +23,8 @@ function audioPlayer() {
     });
 
 
-    $("#playlist li a").click(function (e) {
-        var currentSong = $(this).parent().index();
+    $('#playlist li a span img').click(function (e) {
+      var currentSong = $(this).parent().parent().parent().index();
         var items = $("#playlist li");
         var songsNumber = items.length;
         e.preventDefault();
@@ -33,12 +34,12 @@ function audioPlayer() {
                 $("#playlist li audio")[i].pause();
                 $("#playlist li audio")[i].currentTime = 0;
                 $("#playlist li")[i].classList.add("paused");
-            } else if (i === currentSong && $(this).parent().prop('class').includes("paused")) {
+            } else if (i === currentSong && $(this).parent().parent().parent().prop('class').includes("paused")) {
                 $("#playlist li audio")[currentSong].play();
                 $("#playlist li a span img")[currentSong].setAttribute('src', 'assets/img/UMEQ-01.png');
                 $("#playlist li").removeClass("current-song");
-                $(this).parent().addClass("current-song");
-                $(this).parent().removeClass("paused");
+                $(this).parent().parent().parent().addClass("current-song");
+                $(this).parent().parent().parent().removeClass("paused");
                 $("#playlist li audio")[currentSong].addEventListener("ended", function () {
                     currentSong++;
                     if (currentSong === $("#playlist li a").length)
@@ -52,8 +53,8 @@ function audioPlayer() {
                 $("#playlist li audio")[currentSong].pause();
                 $("#playlist li").removeClass("current-song");
                 $("#playlist li a span img")[currentSong].setAttribute('src', 'assets/img/UMEQ-01.png');
-                $(this).parent().addClass("current-song");
-                $(this).parent().addClass("paused");
+                $(this).parent().parent().parent().addClass("current-song");
+                $(this).parent().parent().parent().addClass("paused");
             }
         }
     });
