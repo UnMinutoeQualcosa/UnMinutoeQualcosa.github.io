@@ -4783,3 +4783,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     max-width: 50% !important;
     max-height: 70% !important;
 }
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
