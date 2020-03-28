@@ -4768,8 +4768,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 .imgLogo {
     border: 0;
-    max-width: 25%!important;
-    max-height: 25%!important;
+    max-width: 15%!important;
+    max-height: 15%!important;
     width: auto !important;;
     height: auto !important;;
 }
