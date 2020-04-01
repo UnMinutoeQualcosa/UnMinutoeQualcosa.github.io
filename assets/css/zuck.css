@@ -1,5 +1,4 @@
-/* modal */
-#main @keyframes zuckSlideTime {
+@keyframes zuckSlideTime {
   0% {
     max-width: 0;
   }
@@ -8,7 +7,7 @@
   }
 }
 
-#main @keyframes zuckLoading {
+@keyframes zuckLoading {
   0% {
     transform: rotate(0deg);
   }
@@ -420,39 +419,38 @@
   }
 }
 
-/* timeline */
-#main .stories.carousel {
+.stories.carousel {
   white-space: nowrap;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   overflow-scrolling: touch;
 }
-#main .stories.carousel::-webkit-scrollbar {
+.stories.carousel::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }
-#main .stories.carousel .story {
+.stories.carousel .story {
   display: inline-block;
   width: 18vw;
   max-width: 90px;
   margin: 0 6px;
   vertical-align: top;
 }
-#main .stories.carousel .story:first-child {
+.stories.carousel .story:first-child {
   margin-left: 0;
 }
-#main .stories.carousel .story:last-child {
+.stories.carousel .story:last-child {
   margin-right: 0;
 }
 
-#main .stories.carousel .story > .item-link {
+.stories.carousel .story > .item-link {
   text-align: center;
   display: block;
 }
-#main .stories.carousel .story > .item-link:active > .item-preview {
+.stories.carousel .story > .item-link:active > .item-preview {
   transform: scale(0.9);
 }
-#main .stories.carousel .story > .item-link > .item-preview {
+.stories.carousel .story > .item-link > .item-preview {
   display: block;
   box-sizing: border-box;
   font-size: 0;
@@ -461,7 +459,7 @@
   overflow: hidden;
   transition: transform 0.2s;
 }
-#main .stories.carousel .story > .item-link > .item-preview img {
+.stories.carousel .story > .item-link > .item-preview img {
   display: block;
   box-sizing: border-box;
   height: 100%;
@@ -470,7 +468,7 @@
   background-position: center;
   object-fit: cover;
 }
-#main .stories.carousel .story > .item-link > .info {
+.stories.carousel .story > .item-link > .info {
   display: inline-block;
   margin-top: 0.5em;
   line-height: 1.2em;
@@ -478,32 +476,32 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#main .stories.carousel .story > .item-link > .info .name {
+.stories.carousel .story > .item-link > .info .name {
   font-weight: 300;
 }
-#main .stories.carousel .story > .item-link > .info .time {
+.stories.carousel .story > .item-link > .info .time {
   display: none;
 }
-#main .stories.carousel .story > .items {
+.stories.carousel .story > .items {
   display: none;
 }
 
-#main .stories.list {
+.stories.list {
   white-space: nowrap;
   overflow: auto;
 }
-#main .stories.list .story {
+.stories.list .story {
   display: block;
   width: auto;
   margin: 6px;
   padding-bottom: 6px;
 }
 
-#main.stories.list .story > .item-link {
+.stories.list .story > .item-link {
   text-align: left;
   display: block;
 }
-#main .stories.list .story > .item-link > .item-preview {
+.stories.list .story > .item-link > .item-preview {
   height: 42px;
   width: 42px;
   max-width: 42px;
@@ -514,7 +512,7 @@
   font-size: 0;
   overflow: hidden;
 }
-#main .stories.list .story > .item-link > .item-preview img {
+.stories.list .story > .item-link > .item-preview img {
   display: block;
   box-sizing: border-box;
   height: 100%;
@@ -522,20 +520,20 @@
   background-size: cover;
   background-position: center;
 }
-#main .stories.list .story > .item-link > .info {
+.stories.list .story > .item-link > .info {
   display: inline-block;
   line-height: 1.6em;
   overflow: hidden;
   text-overflow: ellipsis;
   vertical-align: top;
 }
-#main .stories.list .story > .item-link > .info .name {
+.stories.list .story > .item-link > .info .name {
   font-weight: 500;
   display: block;
 }
-#main .stories.list .story > .item-link > .info .time {
+.stories.list .story > .item-link > .info .time {
   display: inline-block;
 }
-#main .stories.list .story > .items {
+.stories.list .story > .items {
   display: none;
 }
