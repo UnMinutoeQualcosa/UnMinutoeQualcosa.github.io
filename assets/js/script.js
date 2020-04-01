@@ -47,7 +47,7 @@ var getCurrentSkin = function() {
       list: false,
       autoFullScreen: false,
       cubeEffect: false,
-      paginationArrows: true
+      paginationArrows: false
     },
 
     Snapssenger: {
