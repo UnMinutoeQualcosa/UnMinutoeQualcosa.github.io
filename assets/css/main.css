@@ -2957,6 +2957,8 @@ header.major > :last-child {
 header.major > p {
     margin-top: 0;
     text-align: center;
+   padding-right: 8%;
+   padding-left: 8%;
 }
 
 header.major > .date {
