@@ -2957,8 +2957,8 @@ header.major > :last-child {
 header.major > p {
     margin-top: 0;
     text-align: center;
-   padding-right: 8%;
-   padding-left: 8%;
+    padding-right: 8%;
+    padding-left: 8%;
 }
 
 header.major > .date {
@@ -4771,8 +4771,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 .imgLogo {
     border: 0;
-    max-width: 15%!important;
-    max-height: 15%!important;
+    max-width: 15% !important;
+    max-height: 15% !important;
     width: auto !important;;
     height: auto !important;;
 }
@@ -4788,6 +4788,11 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 .inactiveLink {
-   pointer-events: none;
-   cursor: default;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+#arrowdown:hover {
+    color: white !important;
 }

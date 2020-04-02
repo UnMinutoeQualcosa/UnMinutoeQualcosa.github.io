@@ -263,7 +263,7 @@
           return "<span \n                    class=\"".concat(currentIndex === index ? 'active' : '', " ").concat(get(item, 'seen') === true ? 'seen' : '', "\"\n                    data-index=\"").concat(index, "\" data-item-id=\"").concat(get(item, 'id'), "\">\n                      <b style=\"animation-duration:").concat(get(item, 'length') === '' ? '3' : get(item, 'length'), "s\"></b>\n                  </span>");
         },
         viewerItemBody: function viewerItemBody(index, currentIndex, item) {
-          return "<div \n                    class=\"item ".concat(get(item, 'seen') === true ? 'seen' : '', " ").concat(currentIndex === index ? 'active' : '', "\"\n                    data-time=\"").concat(get(item, 'time'), "\" data-type=\"").concat(get(item, 'type'), "\" data-index=\"").concat(index, "\" data-item-id=\"").concat(get(item, 'id'), "\">\n                    ").concat(get(item, 'type') === 'video' ? "<video class=\"media\" muted webkit-playsinline playsinline preload=\"auto\" src=\"".concat(get(item, 'src'), "\" ").concat(get(item, 'type'), "></video>\n                        <b class=\"tip muted\">").concat(option('language', 'unmute'), "</b>") : "<img loading=\"auto\" class=\"media\" src=\"".concat(get(item, 'src'), "\" ").concat(get(item, 'type'), " />\n                    "), "\n\n                    ").concat(get(item, 'link') ? "<a class=\"tip link\" href=\"".concat(get(item, 'link'), "\" rel=\"noopener\" target=\"_blank\">\n                            ").concat(!get(item, 'linkText') || get(item, 'linkText') === '' ? option('language', 'visitLink') : get(item, 'linkText'), "\n                          </a>") : "", "\n                  </div>");
+          return "<div \n                    class=\"item ".concat(get(item, 'seen') === true ? 'seen' : '', " ").concat(currentIndex === index ? 'active' : '', "\"\n                    data-time=\"").concat(get(item, 'time'), "\" data-type=\"").concat(get(item, 'type'), "\" data-index=\"").concat(index, "\" data-item-id=\"").concat(get(item, 'id'), "\">\n                    ").concat(get(item, 'type') === 'video' ? "<video class=\"media\" webkit-playsinline playsinline preload=\"auto\" src=\"".concat(get(item, 'src'), "\" ").concat(get(item, 'type'), "></video>\n                        <b class=\"tip muted\">").concat(option('language', 'unmute'), "</b>") : "<img loading=\"auto\" class=\"media\" src=\"".concat(get(item, 'src'), "\" ").concat(get(item, 'type'), " />\n                    "), "\n\n                    ").concat(get(item, 'link') ? "<a class=\"tip link\" href=\"".concat(get(item, 'link'), "\" rel=\"noopener\" target=\"_blank\">\n                            ").concat(!get(item, 'linkText') || get(item, 'linkText') === '' ? option('language', 'visitLink') : get(item, 'linkText'), "\n                          </a>") : "", "\n                  </div>");
         }
       },
       language: {
@@ -457,7 +457,9 @@
         var video = slides.querySelector('video');
 
         var addMuted = function addMuted(video) {
-          if (video.muted) {
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            storyViewer.classList.add('muted');
+          } else if(video.muted) {
             storyViewer.classList.add('muted');
           } else {
             storyViewer.classList.remove('muted');

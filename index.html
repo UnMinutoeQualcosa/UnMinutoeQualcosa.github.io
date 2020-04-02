@@ -25,19 +25,20 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     </noscript>
 </head>
 <body class="is-preload">
+
 <!-- Wrapper -->
 <div id="wrapper" class="fade-in">
 
     <!-- Intro -->
     <div id="intro">
-        <img src="assets/img/UMEQ-01.png" class="imgLogo"/>
+        <img src="images/UMEQ-01.png" class="imgLogo"/>
         <h1>Un minuto
             <br>
             e qualcosa
         </h1>
         <ul class="actions">
             <li>
-                <a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
+                <a href="#main" class="button icon solid solo fa-arrow-down">Continue</a>
             </li>
         </ul>
     </div>
@@ -69,93 +70,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <!-- Featured Post -->
             <section class="post">
 
-            <article class="post featured">
+                <article class="post featured">
 
-                <div id="stories" class="storiesWrapper"></div>
+                    <div id="stories" class="storiesWrapper"></div>
 
-                <script src="assets/js/zuck.js"></script>
-                <script src="assets/js/script.js"></script>
-
-                <script>
-                    var currentSkin = getCurrentSkin();
-                    var stories = new Zuck('stories', {
-                        backNative: true,
-                        previousTap: true,
-                        skin: currentSkin['name'],
-                        autoFullScreen: currentSkin['params']['autoFullScreen'],
-                        avatars: currentSkin['params']['avatars'],
-                        paginationArrows: currentSkin['params']['paginationArrows'],
-                        list: currentSkin['params']['list'],
-                        cubeEffect: currentSkin['params']['cubeEffect'],
-                        localStorage: true,
-                        stories: [
-                            Zuck.buildTimelineItem(
-                                "alessadraIaaaa",
-                                "assets/img/UMEQ-01.png",
-                                "",
-                                "",
-                                timestamp(2020, 4, 21),
-                                [
-                                    ["alessandraIaaaa", "video", 0, "assets/video/aaaa.mp4", false, false, timestamp(2020, 3, 21)],
-                                ]
-                            ),
-                            Zuck.buildTimelineItem(
-                                "gorillaz",
-                                "assets/img/UMEQ-01.png",
-                                "",
-                                "",
-                                timestamp(2020, 4, 21),
-                                [
-                                    ["gorillaz-1", "video", 0, "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/4.mp4", "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/4.jpg", '', false, false, timestamp(2020, 4, 21)],
-                                    ["gorillaz-2", "photo", 3, "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/5.jpg", "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/5.jpg", '', false, false, timestamp(2020, 4, 21)],
-                                ]
-                            ),
-                            Zuck.buildTimelineItem(
-                                "ladygaga",
-                                "assets/img/UMEQ-01.png",
-                                "",
-                                "",
-                                timestamp(2020, 4, 21),
-                                [
-                                    ["ladygaga-1", "photo", 5, "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/6.jpg", "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/6.jpg", '', false, false, timestamp(2020, 4, 21)],
-                                    ["ladygaga-2", "photo", 3, "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/7.jpg", "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/7.jpg", 'http://ladygaga.com', false, false, timestamp(2020, 4, 21)],
-                                ]
-                            ),
-                            Zuck.buildTimelineItem(
-                                "starboy",
-                                "assets/img/UMEQ-01.png",
-                                "",
-                                "",
-                                timestamp(2020, 4, 21),
-                                [
-                                    ["starboy-1", "photo", 5, "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/8.jpg", "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/8.jpg", '', false, false, timestamp(2020, 4, 21)]
-                                ]
-                            ),
-                            Zuck.buildTimelineItem(
-                                "riversquomo",
-                                "assets/img/UMEQ-01.png",
-                                "",
-                                "",
-                                timestamp(2020, 4, 21),
-                                [
-                                    ["riverscuomo", "photo", 10, "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/9.jpg", "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/9.jpg", '', false, false, timestamp(2020, 4, 21)]
-                                ]
-                            ),
-                            Zuck.buildTimelineItem(
-                                "riversquomo1",
-                                "assets/img/UMEQ-01.png",
-                                "",
-                                "",
-                                timestamp(2020, 4, 21),
-                                [
-                                    ["riverscuomo1", "photo", 10, "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/9.jpg", "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/stories/9.jpg", '', false, false, timestamp(2020, 4, 21)]
-                                ]
-                            )
-                        ]
-                    });
-                </script>
-            </article>
-                </section>
+                    <script src="assets/js/zuck.js"></script>
+                    <script src="assets/js/script.js"></script>
+                    <script src="assets/js/stories.js"></script>
+                </article>
+            </section>
 
         </div>
 
@@ -213,23 +136,23 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <section class="post">
                 <header class="major">
 
-            <span></span>
-               <h1>Parla con te stesso</h1>
+                    <span></span>
+                    <h1>Parla con te stesso</h1>
 
-                <h3>Manda il tuo messaggio a:</h3>
-                <hr/>
-                <h3>Email</h3>
+                    <h3>Manda il tuo messaggio a:</h3>
+                    <hr/>
+                    <h3>Email</h3>
 
-                <div>
-                    <a href="mailto:unminutoequalcosa@gmail.com?subject=NuovoAudio">unminutoequalcosa@gmail.com</a>
-                </div>
-                <br/>
-                <h3>Social</h3>
-                <div>
-                    <a href="https://www.facebook.com/unminutoequalcosa/" class="icon brands alt fa-facebook-f">
-                        <span class="label">Facebook</span>
-                    </a>
-                </div>
+                    <div>
+                        <a href="mailto:unminutoequalcosa@gmail.com?subject=NuovoAudio">unminutoequalcosa@gmail.com</a>
+                    </div>
+                    <br/>
+                    <h3>Social</h3>
+                    <div>
+                        <a href="https://www.facebook.com/unminutoequalcosa/" class="icon brands alt fa-facebook-f">
+                            <span class="label">Facebook</span>
+                        </a>
+                    </div>
                 </header>
             </section>
         </footer>
