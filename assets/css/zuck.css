@@ -429,12 +429,25 @@
     display: none;
   }
 }
+.scroll {
+  overflow: scroll;
+}
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
 
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
 .stories.carousel {
   white-space: nowrap;
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
 }
 .stories.carousel::-webkit-scrollbar {
   width: 0px;

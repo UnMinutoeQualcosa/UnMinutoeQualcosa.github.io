@@ -1195,7 +1195,7 @@
       updateStorySeenPosition();
       var avatars = option('avatars') ? 'user-icon' : 'story-preview';
       var list = option('list') ? 'list' : 'carousel';
-      timeline.className += " stories ".concat(avatars, " ").concat(list, " ").concat("".concat(option('skin')).toLowerCase());
+      timeline.className += " stories ".concat(avatars, " ").concat(list, " ").concat("scroll", " ").concat("".concat(option('skin')).toLowerCase());
       return zuck;
     };
 
