@@ -263,7 +263,7 @@
           return "<span \n                    class=\"".concat(currentIndex === index ? 'active' : '', " ").concat(get(item, 'seen') === true ? 'seen' : '', "\"\n                    data-index=\"").concat(index, "\" data-item-id=\"").concat(get(item, 'id'), "\">\n                      <b style=\"animation-duration:").concat(get(item, 'length') === '' ? '3' : get(item, 'length'), "s\"></b>\n                  </span>");
         },
         viewerItemBody: function viewerItemBody(index, currentIndex, item) {
-          return "<div \n                    class=\"item ".concat(get(item, 'seen') === true ? 'seen' : '', " ").concat(currentIndex === index ? 'active' : '', "\"\n                    data-time=\"").concat(get(item, 'time'), "\" data-type=\"").concat(get(item, 'type'), "\" data-index=\"").concat(index, "\" data-item-id=\"").concat(get(item, 'id'), "\">\n                    ").concat(get(item, 'type') === 'video' ? "<video class=\"media\" webkit-playsinline playsinline preload=\"auto\" src=\"".concat(get(item, 'src'), "\" ").concat(get(item, 'type'), "></video>\n                        <b class=\"tip muted\">").concat(option('language', 'unmute'), "</b>") : "<img loading=\"auto\" class=\"media\" src=\"".concat(get(item, 'src'), "\" ").concat(get(item, 'type'), " />\n                    "), "\n\n                    ").concat(get(item, 'link') ? "<a class=\"tip link\" href=\"".concat(get(item, 'link'), "\" rel=\"noopener\" target=\"_blank\">\n                            ").concat(!get(item, 'linkText') || get(item, 'linkText') === '' ? option('language', 'visitLink') : get(item, 'linkText'), "\n                          </a>") : "", "\n                  </div>");
+          return "<div \n                    class=\"item ".concat(get(item, 'seen') === true ? 'seen' : '', " ").concat(currentIndex === index ? 'active' : '', "\"\n                    data-time=\"").concat(get(item, 'time'), "\" data-type=\"").concat(get(item, 'type'), "\" data-index=\"").concat(index, "\" data-item-id=\"").concat(get(item, 'id'), "\">\n                    ").concat(get(item, 'type') === 'video' ? "<video class=\"media\" webkit-playsinline playsinline preload=\"auto\" src=\"".concat(get(item, 'src'), "\" ").concat(get(item, 'type'), "></video>\n                        <b class=\"tip \">").concat(option('language', 'unmute'), "</b>") : "<img loading=\"auto\" class=\"media\" src=\"".concat(get(item, 'src'), "\" ").concat(get(item, 'type'), " />\n                    "), "\n\n                    ").concat(get(item, 'link') ? "<a class=\"tip link\" href=\"".concat(get(item, 'link'), "\" rel=\"noopener\" target=\"_blank\">\n                            ").concat(!get(item, 'linkText') || get(item, 'linkText') === '' ? option('language', 'visitLink') : get(item, 'linkText'), "\n                          </a>") : "", "\n                  </div>");
         }
       },
       language: {
@@ -475,26 +475,23 @@
           };
 
           video.onplay = function () {
-            addMuted(video);
             storyViewer.classList.remove('stopped');
             storyViewer.classList.remove('paused');
             storyViewer.classList.remove('loading');
           };
 
           video.onload = video.onplaying = video.oncanplay = function () {
-            addMuted(video);
             storyViewer.classList.remove('loading');
           };
 
           video.onvolumechange = function () {
-            addMuted(video);
           };
         }
 
         var storyViewerWrap = document.createElement('div');
         storyViewerWrap.innerHTML = option('template', 'viewerItem')(storyData, currentItem);
         var storyViewer = storyViewerWrap.firstElementChild;
-        storyViewer.className = "story-viewer muted ".concat(className, " ").concat(!forcePlay ? 'stopped' : '', " ").concat(option('backButton') ? 'with-back-button' : '');
+        storyViewer.className = "story-viewer  ".concat(className, " ").concat(!forcePlay ? 'stopped' : '', " ").concat(option('backButton') ? 'with-back-button' : '');
         storyViewer.setAttribute('data-story-id', storyId);
         storyViewer.querySelector('.slides-pointers .wrap').innerHTML = pointerItems;
         each(storyViewer.querySelectorAll('.close, .back'), function (i, el) {
@@ -1195,7 +1192,7 @@
       updateStorySeenPosition();
       var avatars = option('avatars') ? 'user-icon' : 'story-preview';
       var list = option('list') ? 'list' : 'carousel';
-      timeline.className += " stories ".concat(avatars, " ").concat(list, " ").concat("".concat(option('skin')).toLowerCase());
+      timeline.className += " stories ".concat(avatars, " ").concat(list, " ").concat("scroll", " ").concat("".concat(option('skin')).toLowerCase());
       return zuck;
     };
 

@@ -84,7 +84,7 @@ var stories = new Zuck('stories', {
             "",
             timestamp(value.year, value.month, value.day),
             [
-                [value.name, "video", 0, "assets/mp3/" + value.name + ".mp3", "", "", false, false, timestamp(value.year, value.month, value.day)],
+                [value.name, "video", 180, "assets/mp3/" + value.name + ".mp3", "", "", false, false, timestamp(value.year, value.month, value.day)],
             ]
         )
     )
