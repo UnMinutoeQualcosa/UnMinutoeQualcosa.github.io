@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f66fcf30-b297-4ddd-9360-7f2d8cace3ee" name="Default" comment="remove scrolling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/zuck.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/zuck.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/stories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/zuck.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/zuck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,11 +39,6 @@
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="809" />
   </component>
   <component name="ProjectId" id="1a1cH27KXgz9VA7XE5R6fWWjeua" />
   <component name="PropertiesComponent">
@@ -163,6 +158,7 @@
       <updated>1585246269152</updated>
       <workItem from="1585906449691" duration="1533000" />
       <workItem from="1585909286625" duration="2496000" />
+      <workItem from="1586002027935" duration="1963000" />
     </task>
     <task id="LOCAL-00001" summary="Add logos">
       <created>1585246837646</created>
@@ -204,8 +200,34 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="prod-version" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="prod-version" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>

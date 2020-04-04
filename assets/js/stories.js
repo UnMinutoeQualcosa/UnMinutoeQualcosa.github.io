@@ -9,7 +9,7 @@ class Audio {
     }
 }
 
-
+// N.B. il mese parte da 0 quindi 3 significa Aprile
 const audioList = [
     new Audio("GiuseppeDambra", 2020, 3, 21),
     new Audio("AriannaFlorio", 2020, 3, 21),
