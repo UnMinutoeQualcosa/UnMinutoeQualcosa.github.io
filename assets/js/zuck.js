@@ -492,7 +492,7 @@
         var storyViewerWrap = document.createElement('div');
         storyViewerWrap.innerHTML = option('template', 'viewerItem')(storyData, currentItem);
         var storyViewer = storyViewerWrap.firstElementChild;
-        storyViewer.className = "story-viewer  ".concat(className, " ").concat(!forcePlay ? 'stopped' : '', " ").concat(option('backButton') ? 'with-back-button' : '');
+        storyViewer.className = "story-viewer muted ".concat(className, " ").concat(!forcePlay ? 'stopped' : '', " ").concat(option('backButton') ? 'with-back-button' : '');
         storyViewer.setAttribute('data-story-id', storyId);
         storyViewer.querySelector('.slides-pointers .wrap').innerHTML = pointerItems;
         each(storyViewer.querySelectorAll('.close, .back'), function (i, el) {
