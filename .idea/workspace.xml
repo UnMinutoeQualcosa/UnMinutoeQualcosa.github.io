@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f66fcf30-b297-4ddd-9360-7f2d8cace3ee" name="Default" comment="Fix scrollbar and add title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/zuck.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/zuck.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/stories.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +50,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/mp3" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -192,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586004214388</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add new audios">
+      <created>1586004916228</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586004916228</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +256,8 @@
     <MESSAGE value="remove muted by default" />
     <MESSAGE value="remove scrolling" />
     <MESSAGE value="Fix scrollbar and add title" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix scrollbar and add title" />
+    <MESSAGE value="Add new audios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new audios" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

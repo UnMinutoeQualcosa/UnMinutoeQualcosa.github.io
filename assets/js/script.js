@@ -1,9 +1,9 @@
-function timestamp() {
+function timestamp(year, month, day) {
 
   var timeIndex = 0;
   var shifts = [35, 60, 60 * 3, 60 * 60 * 2, 60 * 60 * 25, 60 * 60 * 24 * 4, 60 * 60 * 24 * 10];
 
-  var now = new Date();
+  var now = new Date(year, month, day);
   var shift = shifts[timeIndex++] || 0;
   var date = new Date(now - shift * 1000);
 
