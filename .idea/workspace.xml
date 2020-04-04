@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f66fcf30-b297-4ddd-9360-7f2d8cace3ee" name="Default" comment="Fix scrollbar and add title">
+    <list default="true" id="f66fcf30-b297-4ddd-9360-7f2d8cace3ee" name="Default" comment="Add anchors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/stories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/zuck.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/zuck.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +52,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/mp3" />
     </key>
@@ -205,7 +208,42 @@
       <option name="project" value="LOCAL" />
       <updated>1586004916228</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix date on stories">
+      <created>1586005036568</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586005036568</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add anchors">
+      <created>1586006695384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586006695384</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add anchors">
+      <created>1586009030771</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586009030771</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add anchors">
+      <created>1586009374516</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586009374516</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add anchors finally">
+      <created>1586012799413</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586012799413</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +260,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="prod-version" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -241,6 +279,11 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="prod-version" />
                 </option>
               </RecentGroup>
@@ -257,7 +300,10 @@
     <MESSAGE value="remove scrolling" />
     <MESSAGE value="Fix scrollbar and add title" />
     <MESSAGE value="Add new audios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new audios" />
+    <MESSAGE value="Fix date on stories" />
+    <MESSAGE value="Add anchors" />
+    <MESSAGE value="Add anchors finally" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add anchors finally" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

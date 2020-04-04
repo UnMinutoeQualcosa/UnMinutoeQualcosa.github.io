@@ -183,12 +183,12 @@
       var seconds = (new Date().getTime() - dateStr) / 1000;
       var language = option('language', 'time');
       var formats = [[60, " ".concat(language['seconds']), 1], // 60
-      [120, "1 ".concat(language['minute']), ''], // 60*2
-      [3600, " ".concat(language['minutes']), 60], // 60*60, 60
-      [7200, "1 ".concat(language['hour']), ''], // 60*60*2
-      [86400, " ".concat(language['hours']), 3600], // 60*60*24, 60*60
-      [172800, " ".concat(language['yesterday']), ''], // 60*60*24*2
-      [604800, " ".concat(language['days']), 86400]];
+        [120, "1 ".concat(language['minute']), ''], // 60*2
+        [3600, " ".concat(language['minutes']), 60], // 60*60, 60
+        [7200, "1 ".concat(language['hour']), ''], // 60*60*2
+        [86400, " ".concat(language['hours']), 3600], // 60*60*24, 60*60
+        [172800, " ".concat(language['yesterday']), ''], // 60*60*24*2
+        [604800, " ".concat(language['days']), 86400]];
       var currentFormat = 1;
 
       if (seconds < 0) {
@@ -457,9 +457,7 @@
         var video = slides.querySelector('video');
 
         var addMuted = function addMuted(video) {
-          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            storyViewer.classList.add('muted');
-          } else if(video.muted) {
+          if(video.muted) {
             storyViewer.classList.add('muted');
           } else {
             storyViewer.classList.remove('muted');
@@ -475,16 +473,19 @@
           };
 
           video.onplay = function () {
+            addMuted(video);
             storyViewer.classList.remove('stopped');
             storyViewer.classList.remove('paused');
             storyViewer.classList.remove('loading');
           };
 
           video.onload = video.onplaying = video.oncanplay = function () {
+            addMuted(video);
             storyViewer.classList.remove('loading');
           };
 
           video.onvolumechange = function () {
+            addMuted(video);
           };
         }
 

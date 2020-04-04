@@ -46,7 +46,7 @@ var getCurrentSkin = function() {
     FaceSnap: {
       avatars: true,
       list: false,
-      autoFullScreen: false,
+      autoFullScreen: true,
       cubeEffect: false,
       paginationArrows: false
     },
