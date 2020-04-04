@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f66fcf30-b297-4ddd-9360-7f2d8cace3ee" name="Default" comment="remove scrolling">
+    <list default="true" id="f66fcf30-b297-4ddd-9360-7f2d8cace3ee" name="Default" comment="Fix scrollbar and add title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/zuck.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/zuck.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/stories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +155,7 @@
       <updated>1585246269152</updated>
       <workItem from="1585906449691" duration="1533000" />
       <workItem from="1585909286625" duration="2496000" />
-      <workItem from="1586002027935" duration="1963000" />
+      <workItem from="1586002027935" duration="2271000" />
     </task>
     <task id="LOCAL-00001" summary="Add logos">
       <created>1585246837646</created>
@@ -188,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585911133200</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix scrollbar and add title">
+      <created>1586004214388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586004214388</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +242,8 @@
     <MESSAGE value="Remove logos" />
     <MESSAGE value="remove muted by default" />
     <MESSAGE value="remove scrolling" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove scrolling" />
+    <MESSAGE value="Fix scrollbar and add title" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix scrollbar and add title" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
