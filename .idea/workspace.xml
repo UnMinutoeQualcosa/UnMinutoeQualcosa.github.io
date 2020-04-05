@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f66fcf30-b297-4ddd-9360-7f2d8cace3ee" name="Default" comment="Add anchors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/zuck.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/zuck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mp3/MauroValentini.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mp3/MollinDiChiara.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mp3/MolliniDiChiara.mp3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,11 +53,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/mp3" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/js" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -165,6 +167,7 @@
       <workItem from="1585906449691" duration="1533000" />
       <workItem from="1585909286625" duration="2496000" />
       <workItem from="1586002027935" duration="2271000" />
+      <workItem from="1586077977743" duration="1010000" />
     </task>
     <task id="LOCAL-00001" summary="Add logos">
       <created>1585246837646</created>
@@ -243,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586012799413</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add anchors">
+      <created>1586026931627</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586026931627</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix scrolling">
+      <created>1586028390149</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586028390149</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,9 +318,10 @@
     <MESSAGE value="Fix scrollbar and add title" />
     <MESSAGE value="Add new audios" />
     <MESSAGE value="Fix date on stories" />
-    <MESSAGE value="Add anchors" />
     <MESSAGE value="Add anchors finally" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add anchors finally" />
+    <MESSAGE value="Add anchors" />
+    <MESSAGE value="Fix scrolling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix scrolling" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
