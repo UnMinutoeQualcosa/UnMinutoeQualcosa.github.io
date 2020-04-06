@@ -757,7 +757,7 @@
 
                     option('callbacks', 'onOpen')(storyId, callback);
                 },
-                next: function next(unmute) {
+                next: function next() {
                     var callback = function callback() {
                         var lastStory = zuck.internalData['currentStory'];
                         var lastStoryTimelineElement = query("#".concat(id, " [data-id=\"").concat(lastStory, "\"]"));
