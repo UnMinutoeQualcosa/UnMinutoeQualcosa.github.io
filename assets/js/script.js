@@ -76,7 +76,7 @@ var getCurrentSkin = function() {
   }
 
   return {
-    name: skin, 
-    params: skins[skin] 
+    name: skin,
+    params: skins[skin]
   };
 };
