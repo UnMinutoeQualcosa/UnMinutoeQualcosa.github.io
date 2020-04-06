@@ -477,19 +477,31 @@
                     };
 
                     video.onplay = function () {
-                        addMuted()
+                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                            addMuted(video);
+                        } else {
+                            addMuted()
+                        }
                         storyViewer.classList.remove('stopped');
                         storyViewer.classList.remove('paused');
                         storyViewer.classList.remove('loading');
                     };
 
                     video.onload = video.onplaying = video.oncanplay = function () {
-                        addMuted()
+                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                            addMuted(video);
+                        } else {
+                            addMuted()
+                        }
                         storyViewer.classList.remove('loading');
                     };
 
                     video.onvolumechange = function () {
-                        addMuted()
+                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                            addMuted(video);
+                        } else {
+                            addMuted()
+                        }
                     };
                 }
 
@@ -677,7 +689,19 @@
                             if (!(storyViewerViewing && video)) {
                                 navigateItem();
                                 return false;
+                            } else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                                if (storyViewerViewing && video) {
+                                    if (storyViewerViewing.classList.contains('muted')) {
+                                        unmuteVideoItem(video, storyViewerViewing);
+                                    } else {
+                                        navigateItem();
+                                    }
+                                } else {
+                                    navigateItem();
+                                    return false;
+                                }
                             }
+
                         }
                     }
                 };
@@ -957,9 +981,15 @@
                 setDuration();
                 video.addEventListener('loadedmetadata', setDuration);
                 zuck.internalData['currentVideoElement'] = video;
-                unmuteVideoItem(video, storyViewer)
                 video.play();
 
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                    if (unmute && unmute.target) {
+                        unmuteVideoItem(video, storyViewer);
+                    }
+                }else {
+                    unmuteVideoItem(video, storyViewer)
+                }
             } else {
                 zuck.internalData['currentVideoElement'] = false;
             }
@@ -1197,7 +1227,7 @@
             updateStorySeenPosition();
             var avatars = option('avatars') ? 'user-icon' : 'story-preview';
             var list = option('list') ? 'list' : 'carousel';
-            timeline.className += " stories ".concat(avatars, " ").concat(list, " ").concat("scroll", " ").concat("".concat(option('skin')).toLowerCase());
+            timeline.className += " stories ".concat(avatars, " ").concat(list, " ").concat("".concat(option('skin')).toLowerCase());
             return zuck;
         };
 
