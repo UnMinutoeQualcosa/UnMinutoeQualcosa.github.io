@@ -95,14 +95,11 @@
                 if (cancel) {
                     if (document.fullscreenElement || document['webkitFullscreenElement'] || document['mozFullScreenElement'] || document['msFullscreenElement']) {
                         if (document.exitFullscreen) {
-                            document.exitFullscreen()["catch"](function () {
-                            });
+                            document.exitFullscreen()["catch"](function () {});
                         } else if (document['mozCancelFullScreen']) {
-                            document['mozCancelFullScreen']()["catch"](function () {
-                            });
+                            document['mozCancelFullScreen']()["catch"](function () {});
                         } else if (document['mozCancelFullScreen']) {
-                            document['mozCancelFullScreen']()["catch"](function () {
-                            });
+                            document['mozCancelFullScreen']()["catch"](function () {});
                         }
                     }
                 } else {
@@ -238,8 +235,7 @@
                 onOpen: function onOpen(storyId, callback) {
                     callback();
                 },
-                onView: function onView(storyId) {
-                },
+                onView: function onView(storyId) {},
                 onEnd: function onEnd(storyId, callback) {
                     callback();
                 },
@@ -477,31 +473,19 @@
                     };
 
                     video.onplay = function () {
-                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-                            addMuted(video);
-                        } else {
-                            addMuted()
-                        }
+                        addMuted(video);
                         storyViewer.classList.remove('stopped');
                         storyViewer.classList.remove('paused');
                         storyViewer.classList.remove('loading');
                     };
 
                     video.onload = video.onplaying = video.oncanplay = function () {
-                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-                            addMuted(video);
-                        } else {
-                            addMuted()
-                        }
+                        addMuted(video);
                         storyViewer.classList.remove('loading');
                     };
 
                     video.onvolumechange = function () {
-                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-                            addMuted(video);
-                        } else {
-                            addMuted()
-                        }
+                        addMuted(video);
                     };
                 }
 
@@ -686,22 +670,16 @@
 
                             var storyViewerViewing = query('#zuck-modal .viewing');
 
-                            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-                                if (storyViewerViewing && video) {
-                                    if (storyViewerViewing.classList.contains('muted')) {
-                                        unmuteVideoItem(video, storyViewerViewing);
-                                    } else {
-                                        navigateItem();
-                                    }
+                            if (storyViewerViewing && video) {
+                                if (storyViewerViewing.classList.contains('muted')) {
+                                    unmuteVideoItem(video, storyViewerViewing);
                                 } else {
                                     navigateItem();
-                                    return false;
                                 }
-                            } else if (!(storyViewerViewing && video)) {
+                            } else {
                                 navigateItem();
                                 return false;
                             }
-
                         }
                     }
                 };
@@ -854,8 +832,7 @@
                 var callback = option('callbacks', 'onDataUpdate');
 
                 if (callback) {
-                    callback(zuck.data, function () {
-                    });
+                    callback(zuck.data, function () {});
                 }
             }
         };
@@ -909,8 +886,7 @@
             var callback = option('callbacks', 'onDataUpdate');
 
             if (callback) {
-                callback(zuck.data, function () {
-                });
+                callback(zuck.data, function () {});
             }
         }; // BIBLICAL
 
@@ -979,12 +955,8 @@
                 zuck.internalData['currentVideoElement'] = video;
                 video.play();
 
-                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-                    if (unmute && unmute.target) {
-                        unmuteVideoItem(video, storyViewer);
-                    }
-                }else {
-                    unmuteVideoItem(video, storyViewer)
+                if (unmute && unmute.target) {
+                    unmuteVideoItem(video, storyViewer);
                 }
             } else {
                 zuck.internalData['currentVideoElement'] = false;
@@ -997,8 +969,7 @@
             if (video) {
                 try {
                     video.pause();
-                } catch (e) {
-                }
+                } catch (e) {}
             }
         };
 
@@ -1026,8 +997,7 @@
                     var keyName = "zuck-".concat(id, "-").concat(key);
                     window.localStorage[keyName] = JSON.stringify(data);
                 }
-            } catch (e) {
-            }
+            } catch (e) {}
         };
 
         var getLocalData = function getLocalData(key) {
