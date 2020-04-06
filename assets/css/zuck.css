@@ -1,3 +1,4 @@
+/* modal */
 @keyframes zuckSlideTime {
   0% {
     max-width: 0;
@@ -142,11 +143,6 @@
 #zuck-modal-content .story-viewer.loading .head .loading {
   display: block;
 }
-
-#zuck-modal-content .story-viewer.muted .tip.muted{
-  display: none;
-}
-
 #zuck-modal-content .story-viewer.loading .head .right .time,
 #zuck-modal-content .story-viewer.loading .head .right .close {
   display: none;
@@ -434,12 +430,6 @@
     display: none;
   }
 
-  #zuck-modal-content .story-viewer.muted .tip.muted {
-    display: block;
-    padding-bottom: 100px;
-
-  }
-
 }
 .scroll {
   overflow: scroll;
@@ -461,23 +451,16 @@
 
 }
 
-.scroll::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.5);
-  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-
-}
+/* timeline */
 .stories.carousel {
   white-space: nowrap;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
 }
 .stories.carousel::-webkit-scrollbar {
   width: 0px;
   background: transparent;
-
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-
 }
 .stories.carousel .story {
   display: inline-block;

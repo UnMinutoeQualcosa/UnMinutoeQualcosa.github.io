@@ -95,14 +95,11 @@
                 if (cancel) {
                     if (document.fullscreenElement || document['webkitFullscreenElement'] || document['mozFullScreenElement'] || document['msFullscreenElement']) {
                         if (document.exitFullscreen) {
-                            document.exitFullscreen()["catch"](function () {
-                            });
+                            document.exitFullscreen()["catch"](function () {});
                         } else if (document['mozCancelFullScreen']) {
-                            document['mozCancelFullScreen']()["catch"](function () {
-                            });
+                            document['mozCancelFullScreen']()["catch"](function () {});
                         } else if (document['mozCancelFullScreen']) {
-                            document['mozCancelFullScreen']()["catch"](function () {
-                            });
+                            document['mozCancelFullScreen']()["catch"](function () {});
                         }
                     }
                 } else {
@@ -238,8 +235,7 @@
                 onOpen: function onOpen(storyId, callback) {
                     callback();
                 },
-                onView: function onView(storyId) {
-                },
+                onView: function onView(storyId) {},
                 onEnd: function onEnd(storyId, callback) {
                     callback();
                 },
@@ -477,19 +473,19 @@
                     };
 
                     video.onplay = function () {
-                        addMuted()
+                        addMuted(video);
                         storyViewer.classList.remove('stopped');
                         storyViewer.classList.remove('paused');
                         storyViewer.classList.remove('loading');
                     };
 
                     video.onload = video.onplaying = video.oncanplay = function () {
-                        addMuted()
+                        addMuted(video);
                         storyViewer.classList.remove('loading');
                     };
 
                     video.onvolumechange = function () {
-                        addMuted()
+                        addMuted(video);
                     };
                 }
 
@@ -674,7 +670,13 @@
 
                             var storyViewerViewing = query('#zuck-modal .viewing');
 
-                            if (!(storyViewerViewing && video)) {
+                            if (storyViewerViewing && video) {
+                                if (storyViewerViewing.classList.contains('muted')) {
+                                    unmuteVideoItem(video, storyViewerViewing);
+                                } else {
+                                    navigateItem();
+                                }
+                            } else {
                                 navigateItem();
                                 return false;
                             }
@@ -830,8 +832,7 @@
                 var callback = option('callbacks', 'onDataUpdate');
 
                 if (callback) {
-                    callback(zuck.data, function () {
-                    });
+                    callback(zuck.data, function () {});
                 }
             }
         };
@@ -885,8 +886,7 @@
             var callback = option('callbacks', 'onDataUpdate');
 
             if (callback) {
-                callback(zuck.data, function () {
-                });
+                callback(zuck.data, function () {});
             }
         }; // BIBLICAL
 
@@ -953,9 +953,11 @@
                 setDuration();
                 video.addEventListener('loadedmetadata', setDuration);
                 zuck.internalData['currentVideoElement'] = video;
-                unmuteVideoItem(video, storyViewer)
                 video.play();
 
+                if (unmute && unmute.target) {
+                    unmuteVideoItem(video, storyViewer);
+                }
             } else {
                 zuck.internalData['currentVideoElement'] = false;
             }
@@ -967,8 +969,7 @@
             if (video) {
                 try {
                     video.pause();
-                } catch (e) {
-                }
+                } catch (e) {}
             }
         };
 
@@ -996,8 +997,7 @@
                     var keyName = "zuck-".concat(id, "-").concat(key);
                     window.localStorage[keyName] = JSON.stringify(data);
                 }
-            } catch (e) {
-            }
+            } catch (e) {}
         };
 
         var getLocalData = function getLocalData(key) {
@@ -1193,7 +1193,7 @@
             updateStorySeenPosition();
             var avatars = option('avatars') ? 'user-icon' : 'story-preview';
             var list = option('list') ? 'list' : 'carousel';
-            timeline.className += " stories ".concat(avatars, " ").concat(list, " ").concat("scroll", " ").concat("".concat(option('skin')).toLowerCase());
+            timeline.className += " stories ".concat(avatars, " ").concat(list, " ").concat("".concat(option('skin')).toLowerCase());
             return zuck;
         };
 
