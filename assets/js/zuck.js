@@ -686,10 +686,7 @@
 
                             var storyViewerViewing = query('#zuck-modal .viewing');
 
-                            if (!(storyViewerViewing && video)) {
-                                navigateItem();
-                                return false;
-                            } else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
                                 if (storyViewerViewing && video) {
                                     if (storyViewerViewing.classList.contains('muted')) {
                                         unmuteVideoItem(video, storyViewerViewing);
@@ -700,6 +697,9 @@
                                     navigateItem();
                                     return false;
                                 }
+                            } else if (!(storyViewerViewing && video)) {
+                                navigateItem();
+                                return false;
                             }
 
                         }
