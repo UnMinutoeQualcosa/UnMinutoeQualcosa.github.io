@@ -706,6 +706,10 @@
                             window.location.hash = "#!".concat(id);
                         }
 
+                        let audioElementsList = audioList.map(audio => query("#".concat(id, " [data-id=\"".concat(audio.name, "\"]"))));
+                        audioElementsList.map(audioElement => createStoryViewer(audioElement, ''))
+
+
                         var previousItemData = getStoryMorningGlory('previous');
 
                         if (previousItemData) {
