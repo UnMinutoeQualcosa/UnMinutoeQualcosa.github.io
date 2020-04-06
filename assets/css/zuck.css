@@ -142,6 +142,11 @@
 #zuck-modal-content .story-viewer.loading .head .loading {
   display: block;
 }
+
+#zuck-modal-content .story-viewer.muted .tip.muted{
+  display: none;
+}
+
 #zuck-modal-content .story-viewer.loading .head .right .time,
 #zuck-modal-content .story-viewer.loading .head .right .close {
   display: none;
@@ -428,6 +433,13 @@
   #zuck-modal-content .story-viewer .head .right .close {
     display: none;
   }
+
+  #zuck-modal-content .story-viewer.muted .tip.muted {
+    display: block;
+    padding-bottom: 100px;
+
+  }
+
 }
 .scroll {
   overflow: scroll;
