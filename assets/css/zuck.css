@@ -40,6 +40,10 @@
     position: absolute;
     overflow: hidden;
 }
+
+#zuck-modal-content {
+    cursor:pointer;
+}
 #zuck-modal * {
     user-select: none;
     outline: 0;
@@ -371,6 +375,9 @@
 }
 
 @media (max-width: 1024px) {
+    #zuck-modal-content {
+        cursor:pointer;
+    }
     #zuck-modal-content .story-viewer .head {
         top: 3px;
     }
